@@ -1,2 +1,28 @@
-*.class
-*.log
+
+# scala / sbt / java
+project/project/
+project/target/
+target/
+.sbtopts
+.tasty
+
+# intellij
+.idea/
+*.iml
+
+# metals / bsp
+.metals/
+.bloop/
+.bsp/
+project/metals.sbt
+
+# vscode
+.vscode/
+
+# terraform
+.terraform/
+*.tfplan
+*.terraform.lock.hcl
+
+# mac
+.DS_Store
