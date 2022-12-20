@@ -15,7 +15,7 @@ jobs:
           - 2.13.10
         java:
           - corretto@1.11
-          - corretto@1.19
+          - corretto@1.17
         os:
           - ubuntu-22.04
     runs-on: ${{ matrix.os }}
