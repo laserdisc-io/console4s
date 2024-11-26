@@ -24,8 +24,10 @@ package object tree {
         .mkString("")
 
       val extraLinePrefix =
-        s"$prefix${pos.childToken}${config.blank * (config.nodeWidth + 1)}${if (numChildren > 0) config.pipe + (config.blank * 2)
-          else config.empty}"
+        s"$prefix${pos.childToken}${config.blank * (config.nodeWidth + 1)}${
+            if (numChildren > 0) config.pipe + (config.blank * 2)
+            else config.empty
+          }"
 
       val contents: String =
         nc.show(node).split("\\n").toList match {
